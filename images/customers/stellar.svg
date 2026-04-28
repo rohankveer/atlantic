@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180" role="img" aria-label="Stellar Fasteners logo placeholder">
+  <rect width="360" height="180" rx="18" fill="#ecf4fb"/>
+  <circle cx="72" cy="90" r="34" fill="#1e6aa9"/>
+  <path d="M72 58 L80 82 L106 82 L85 96 L92 122 L72 106 L52 122 L59 96 L38 82 L64 82 Z" fill="#ffffff"/>
+  <text x="130" y="84" fill="#24445f" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Stellar</text>
+  <text x="130" y="112" fill="#4d6f8c" font-family="Segoe UI, Arial, sans-serif" font-size="16">Fasteners</text>
+</svg>

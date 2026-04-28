@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 440" role="img" aria-label="Spring manufacturing illustration">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f6f3"/>
+      <stop offset="100%" stop-color="#eeebe4"/>
+    </linearGradient>
+
+    <!-- Steel wire gradient (light) -->
+    <linearGradient id="steelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#e8e4dc"/>
+      <stop offset="35%"  stop-color="#c8c0b0"/>
+      <stop offset="65%"  stop-color="#a09588"/>
+      <stop offset="100%" stop-color="#8a8078"/>
+    </linearGradient>
+
+    <!-- Steel wire gradient (dark coil highlight) -->
+    <linearGradient id="steelDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#9e9488"/>
+      <stop offset="50%"  stop-color="#6e6660"/>
+      <stop offset="100%" stop-color="#504a44"/>
+    </linearGradient>
+
+    <!-- Accent gold -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#c9a240"/>
+      <stop offset="50%"  stop-color="#e8c76a"/>
+      <stop offset="100%" stop-color="#b8922a"/>
+    </linearGradient>
+
+    <!-- Card surface -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f2ede4"/>
+    </linearGradient>
+
+    <!-- Plate gradient -->
+    <linearGradient id="plateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#d4cfc8"/>
+      <stop offset="100%" stop-color="#a09890"/>
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="cardShadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(15,20,30,0.12)"/>
+    </filter>
+    <filter id="springShadow" x="-12%" y="-4%" width="124%" height="120%">
+      <feDropShadow dx="2" dy="6" stdDeviation="8" flood-color="rgba(15,20,30,0.18)"/>
+    </filter>
+    <filter id="subtleShadow" x="-6%" y="-6%" width="112%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(15,20,30,0.10)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="620" height="440" fill="url(#bgGrad)" rx="14"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.06" stroke="#1a3a5c" stroke-width="0.8">
+    <line x1="0" y1="110" x2="620" y2="110"/>
+    <line x1="0" y1="220" x2="620" y2="220"/>
+    <line x1="0" y1="330" x2="620" y2="330"/>
+    <line x1="155" y1="0" x2="155" y2="440"/>
+    <line x1="310" y1="0" x2="310" y2="440"/>
+    <line x1="465" y1="0" x2="465" y2="440"/>
+  </g>
+
+  <!-- Decorative arc rings (background depth) -->
+  <circle cx="560" cy="60"  r="90" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.18"/>
+  <circle cx="560" cy="60"  r="65" fill="none" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.12"/>
+  <circle cx="60"  cy="400" r="80" fill="none" stroke="#1a3a5c"        stroke-width="1"   opacity="0.08"/>
+
+  <!-- ═══════════════════════════════════════════
+       CARD: Compression Spring (main, center)
+  ═══════════════════════════════════════════ -->
+  <g filter="url(#cardShadow)">
+    <rect x="190" y="60" width="240" height="320" rx="14" fill="url(#cardGrad)" stroke="#dedad3" stroke-width="1"/>
+  </g>
+
+  <!-- Card label -->
+  <text x="310" y="92" text-anchor="middle" font-family="Cambria, serif" font-size="13" fill="#1a3a5c" font-weight="600" letter-spacing="0.03em">COMPRESSION SPRING</text>
+  <line x1="220" y1="99" x2="400" y2="99" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Compression spring coils — 11 ellipses stacked -->
+  <g filter="url(#springShadow)">
+    <!-- Top end plate -->
+    <ellipse cx="310" cy="120" rx="52" ry="10" fill="url(#plateGrad)" stroke="#8a8078" stroke-width="1.2"/>
+
+    <!-- Coil loop 1 (top) -->
+    <path d="M 258 120 Q 258 138 310 138 Q 362 138 362 120" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 120 Q 258 138 310 138 Q 362 138 362 120" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 2 -->
+    <path d="M 258 136 Q 258 154 310 154 Q 362 154 362 136" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 136 Q 258 154 310 154 Q 362 154 362 136" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 3 -->
+    <path d="M 258 152 Q 258 170 310 170 Q 362 170 362 152" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 152 Q 258 170 310 170 Q 362 170 362 152" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 4 -->
+    <path d="M 258 168 Q 258 186 310 186 Q 362 186 362 168" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 168 Q 258 186 310 186 Q 362 186 362 168" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 5 -->
+    <path d="M 258 184 Q 258 202 310 202 Q 362 202 362 184" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 184 Q 258 202 310 202 Q 362 202 362 184" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 6 -->
+    <path d="M 258 200 Q 258 218 310 218 Q 362 218 362 200" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 200 Q 258 218 310 218 Q 362 218 362 200" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 7 -->
+    <path d="M 258 216 Q 258 234 310 234 Q 362 234 362 216" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 216 Q 258 234 310 234 Q 362 234 362 216" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 8 -->
+    <path d="M 258 232 Q 258 250 310 250 Q 362 250 362 232" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 232 Q 258 250 310 250 Q 362 250 362 232" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 9 -->
+    <path d="M 258 248 Q 258 266 310 266 Q 362 266 362 248" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 248 Q 258 266 310 266 Q 362 266 362 248" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Coil loop 10 -->
+    <path d="M 258 264 Q 258 282 310 282 Q 362 282 362 264" fill="none" stroke="url(#steelLight)" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 258 264 Q 258 282 310 282 Q 362 282 362 264" fill="none" stroke="url(#steelDark)" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Bottom end plate -->
+    <ellipse cx="310" cy="282" rx="52" ry="10" fill="url(#plateGrad)" stroke="#8a8078" stroke-width="1.2"/>
+  </g>
+
+  <!-- Card measurement annotation -->
+  <line x1="375" y1="120" x2="375" y2="282" stroke="#1a3a5c" stroke-width="1" stroke-dasharray="3 2" opacity="0.4"/>
+  <line x1="369" y1="120" x2="381" y2="120" stroke="#1a3a5c" stroke-width="1.2" opacity="0.5"/>
+  <line x1="369" y1="282" x2="381" y2="282" stroke="#1a3a5c" stroke-width="1.2" opacity="0.5"/>
+  <text x="392" y="205" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9.5" fill="#1a3a5c" opacity="0.6" transform="rotate(90,392,205)">LENGTH</text>
+
+  <!-- Wire diameter annotation -->
+  <line x1="230" y1="310" x2="390" y2="310" stroke="url(#goldGrad)" stroke-width="1.2" stroke-dasharray="4 2" opacity="0.6"/>
+  <line x1="230" y1="305" x2="230" y2="315" stroke="#b8922a" stroke-width="1.5"/>
+  <line x1="390" y1="305" x2="390" y2="315" stroke="#b8922a" stroke-width="1.5"/>
+  <text x="310" y="328" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9.5" fill="#b8922a" font-weight="600">⌀ 0.1 – 9 mm</text>
+  <text x="310" y="345" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#555c66">Max OD: 150 mm</text>
+
+  <!-- Card quality badge -->
+  <rect x="252" y="356" width="116" height="22" rx="11" fill="#1a3a5c" opacity="0.06"/>
+  <text x="310" y="371" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9.5" fill="#1a3a5c" font-weight="700" letter-spacing="0.05em">PRECISION ENGINEERED</text>
+
+  <!-- ═══════════════════════════════════════════
+       LEFT CARD: Torsion Spring
+  ═══════════════════════════════════════════ -->
+  <g filter="url(#subtleShadow)">
+    <rect x="28" y="110" width="148" height="200" rx="12" fill="url(#cardGrad)" stroke="#dedad3" stroke-width="1" opacity="0.95"/>
+  </g>
+  <text x="102" y="133" text-anchor="middle" font-family="Cambria, serif" font-size="10.5" fill="#1a3a5c" font-weight="600">TORSION</text>
+
+  <!-- Torsion spring: coiled body + two arms -->
+  <g transform="translate(102, 225)">
+    <!-- Coil rings -->
+    <circle cx="0" cy="0" r="34" fill="none" stroke="url(#steelLight)" stroke-width="9"  opacity="0.9"/>
+    <circle cx="0" cy="0" r="34" fill="none" stroke="url(#steelDark)"  stroke-width="2.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="22" fill="none" stroke="url(#steelLight)" stroke-width="7"  opacity="0.85"/>
+    <circle cx="0" cy="0" r="22" fill="none" stroke="url(#steelDark)"  stroke-width="2"  opacity="0.35"/>
+    <!-- Top arm -->
+    <line x1="0" y1="-34" x2="0" y2="-64" stroke="url(#steelLight)" stroke-width="6" stroke-linecap="round"/>
+    <line x1="0" y1="-34" x2="0" y2="-64" stroke="url(#steelDark)"  stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <!-- Bottom arm (angled) -->
+    <line x1="0" y1="34" x2="32" y2="62" stroke="url(#steelLight)" stroke-width="6" stroke-linecap="round"/>
+    <line x1="0" y1="34" x2="32" y2="62" stroke="url(#steelDark)"  stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <!-- Center bore -->
+    <circle cx="0" cy="0" r="6" fill="url(#plateGrad)" stroke="#8a8078" stroke-width="1"/>
+  </g>
+  <text x="102" y="303" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#555c66">Two-arm precision</text>
+
+  <!-- ═══════════════════════════════════════════
+       RIGHT CARD: Extension Spring
+  ═══════════════════════════════════════════ -->
+  <g filter="url(#subtleShadow)">
+    <rect x="444" y="110" width="148" height="200" rx="12" fill="url(#cardGrad)" stroke="#dedad3" stroke-width="1" opacity="0.95"/>
+  </g>
+  <text x="518" y="133" text-anchor="middle" font-family="Cambria, serif" font-size="10.5" fill="#1a3a5c" font-weight="600">EXTENSION</text>
+
+  <!-- Extension spring: hook + tight coils + hook -->
+  <g transform="translate(518, 145)">
+    <!-- Top hook -->
+    <path d="M 0 0 Q 18 0 18 14 Q 18 26 0 26" fill="none" stroke="url(#steelLight)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 0 0 Q 18 0 18 14 Q 18 26 0 26" fill="none" stroke="url(#steelDark)"  stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Tight coil body (closed coils) -->
+    <g transform="translate(0, 26)">
+      <ellipse cx="0" cy="0"  rx="26" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="8"/>
+      <ellipse cx="0" cy="10" rx="26" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="8"/>
+      <ellipse cx="0" cy="20" rx="26" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="8"/>
+      <ellipse cx="0" cy="30" rx="26" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="8"/>
+      <ellipse cx="0" cy="40" rx="26" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="8"/>
+      <ellipse cx="0" cy="50" rx="26" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="8"/>
+      <ellipse cx="0" cy="60" rx="26" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="8"/>
+      <!-- Highlight lines on coils -->
+      <ellipse cx="0" cy="0"  rx="26" ry="5.5" fill="none" stroke="url(#steelDark)" stroke-width="2.2" opacity="0.35"/>
+      <ellipse cx="0" cy="10" rx="26" ry="5.5" fill="none" stroke="url(#steelDark)" stroke-width="2.2" opacity="0.35"/>
+      <ellipse cx="0" cy="20" rx="26" ry="5.5" fill="none" stroke="url(#steelDark)" stroke-width="2.2" opacity="0.35"/>
+      <ellipse cx="0" cy="30" rx="26" ry="5.5" fill="none" stroke="url(#steelDark)" stroke-width="2.2" opacity="0.35"/>
+      <ellipse cx="0" cy="40" rx="26" ry="5.5" fill="none" stroke="url(#steelDark)" stroke-width="2.2" opacity="0.35"/>
+      <ellipse cx="0" cy="50" rx="26" ry="5.5" fill="none" stroke="url(#steelDark)" stroke-width="2.2" opacity="0.35"/>
+      <ellipse cx="0" cy="60" rx="26" ry="5.5" fill="none" stroke="url(#steelDark)" stroke-width="2.2" opacity="0.35"/>
+    </g>
+
+    <!-- Bottom hook -->
+    <g transform="translate(0, 86)">
+      <path d="M 0 0 Q -18 0 -18 14 Q -18 26 0 26" fill="none" stroke="url(#steelLight)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 0 0 Q -18 0 -18 14 Q -18 26 0 26" fill="none" stroke="url(#steelDark)"  stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    </g>
+  </g>
+  <text x="518" y="303" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#555c66">Closed-coil with hooks</text>
+
+  <!-- ═══════════════════════════════════════════
+       BOTTOM: Wire spool + ruler strip
+  ═══════════════════════════════════════════ -->
+  <!-- Spool flanges -->
+  <g filter="url(#subtleShadow)" transform="translate(62, 340)">
+    <ellipse cx="0" cy="20" rx="36" ry="10" fill="url(#plateGrad)" stroke="#8a8078" stroke-width="1.2"/>
+    <rect x="-10" y="0" width="20" height="40" rx="4" fill="url(#plateGrad)" stroke="#8a8078" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="36" ry="10" fill="url(#plateGrad)" stroke="#8a8078" stroke-width="1.2"/>
+    <!-- Wire wound on spool -->
+    <ellipse cx="0" cy="5"  rx="22" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="5"/>
+    <ellipse cx="0" cy="12" rx="22" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="5"/>
+    <ellipse cx="0" cy="19" rx="22" ry="5.5" fill="none" stroke="url(#steelLight)" stroke-width="5"/>
+    <ellipse cx="0" cy="5"  rx="22" ry="5.5" fill="none" stroke="url(#steelDark)"  stroke-width="1.5" opacity="0.3"/>
+    <ellipse cx="0" cy="12" rx="22" ry="5.5" fill="none" stroke="url(#steelDark)"  stroke-width="1.5" opacity="0.3"/>
+    <ellipse cx="0" cy="19" rx="22" ry="5.5" fill="none" stroke="url(#steelDark)"  stroke-width="1.5" opacity="0.3"/>
+    <!-- Spool axle -->
+    <rect x="-4" y="-4" width="8" height="48" rx="4" fill="#c8c0b0" stroke="#8a8078" stroke-width="0.8"/>
+  </g>
+  <text x="62" y="408" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#555c66">Wire spool</text>
+
+  <!-- Ruler / measurement strip -->
+  <g transform="translate(140, 355)">
+    <rect x="0" y="0" width="320" height="20" rx="4" fill="url(#plateGrad)" stroke="#8a8078" stroke-width="1"/>
+    <line x1="0"   y1="0" x2="0"   y2="12" stroke="#6e6660" stroke-width="1.4"/>
+    <line x1="32"  y1="0" x2="32"  y2="8"  stroke="#6e6660" stroke-width="1"/>
+    <line x1="64"  y1="0" x2="64"  y2="12" stroke="#6e6660" stroke-width="1.4"/>
+    <line x1="96"  y1="0" x2="96"  y2="8"  stroke="#6e6660" stroke-width="1"/>
+    <line x1="128" y1="0" x2="128" y2="12" stroke="#6e6660" stroke-width="1.4"/>
+    <line x1="160" y1="0" x2="160" y2="8"  stroke="#6e6660" stroke-width="1"/>
+    <line x1="192" y1="0" x2="192" y2="12" stroke="#6e6660" stroke-width="1.4"/>
+    <line x1="224" y1="0" x2="224" y2="8"  stroke="#6e6660" stroke-width="1"/>
+    <line x1="256" y1="0" x2="256" y2="12" stroke="#6e6660" stroke-width="1.4"/>
+    <line x1="288" y1="0" x2="288" y2="8"  stroke="#6e6660" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="12" stroke="#6e6660" stroke-width="1.4"/>
+    <text x="0"   y="19" text-anchor="middle" font-size="7" fill="#6e6660" font-family="monospace">0</text>
+    <text x="64"  y="19" text-anchor="middle" font-size="7" fill="#6e6660" font-family="monospace">2</text>
+    <text x="128" y="19" text-anchor="middle" font-size="7" fill="#6e6660" font-family="monospace">4</text>
+    <text x="192" y="19" text-anchor="middle" font-size="7" fill="#6e6660" font-family="monospace">6</text>
+    <text x="256" y="19" text-anchor="middle" font-size="7" fill="#6e6660" font-family="monospace">8</text>
+    <text x="320" y="19" text-anchor="middle" font-size="7" fill="#6e6660" font-family="monospace">10</text>
+    <text x="160" y="33" text-anchor="middle" font-size="7.5" fill="#b8922a" font-family="'Segoe UI', sans-serif" font-weight="600">mm</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════
+       Bottom brand strip
+  ═══════════════════════════════════════════ -->
+  <rect x="0" y="416" width="620" height="24" rx="0" fill="#1a3a5c" opacity="0.06"/>
+  <text x="310" y="432" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#1a3a5c" font-weight="700" letter-spacing="0.12em" opacity="0.55">ATLANTIC INDUSTRIES · PUNE · EST. 1980</text>
+</svg>

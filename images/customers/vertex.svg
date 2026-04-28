@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180" role="img" aria-label="Vertex Auto Components logo placeholder">
+  <rect width="360" height="180" rx="18" fill="#edf5fd"/>
+  <path d="M36 122 L74 52 L112 122 Z" fill="#135b9b"/>
+  <circle cx="74" cy="96" r="10" fill="#ffffff"/>
+  <text x="130" y="84" fill="#27445d" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Vertex Auto</text>
+  <text x="130" y="112" fill="#4e6f8d" font-family="Segoe UI, Arial, sans-serif" font-size="16">Components</text>
+</svg>

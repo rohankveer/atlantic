@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Factory Placeholder</title>
+  <desc id="desc">Dummy illustration for about section.</desc>
+  <rect width="900" height="560" fill="#eef4fb"/>
+  <rect x="80" y="180" width="740" height="280" rx="14" fill="#ffffff" stroke="#c5d8ea"/>
+  <rect x="120" y="240" width="170" height="120" rx="8" fill="#d6e5f4"/>
+  <rect x="320" y="240" width="170" height="120" rx="8" fill="#d6e5f4"/>
+  <rect x="520" y="240" width="170" height="120" rx="8" fill="#d6e5f4"/>
+  <path d="M110 180 L180 120 L250 180" fill="#b9d0e8"/>
+  <text x="120" y="515" fill="#27445e" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">Dummy Factory Image</text>
+</svg>

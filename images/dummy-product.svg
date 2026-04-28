@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Products Placeholder</title>
+  <desc id="desc">Dummy spring products image.</desc>
+  <rect width="900" height="560" fill="#edf5fe"/>
+  <g fill="none" stroke="#145da0" stroke-width="8" stroke-linecap="round">
+    <path d="M120 180 C 170 130, 220 230, 270 180 C 320 130, 370 230, 420 180 C 470 130, 520 230, 570 180 C 620 130, 670 230, 720 180"/>
+    <path d="M120 280 C 170 230, 220 330, 270 280 C 320 230, 370 330, 420 280 C 470 230, 520 330, 570 280 C 620 230, 670 330, 720 280"/>
+    <path d="M120 380 C 170 330, 220 430, 270 380 C 320 330, 370 430, 420 380 C 470 330, 520 430, 570 380 C 620 330, 670 430, 720 380"/>
+  </g>
+  <text x="120" y="505" fill="#27445e" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">Dummy Product Catalog</text>
+</svg>

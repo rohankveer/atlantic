@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180" role="img" aria-label="Unison Clamping Devices logo placeholder">
+  <rect width="360" height="180" rx="18" fill="#edf6ff"/>
+  <rect x="34" y="52" width="76" height="76" rx="14" fill="#1f6eb8"/>
+  <text x="72" y="98" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">UC</text>
+  <text x="130" y="84" fill="#24445f" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Unison</text>
+  <text x="130" y="112" fill="#50708e" font-family="Segoe UI, Arial, sans-serif" font-size="16">Clamping Devices</text>
+</svg>
