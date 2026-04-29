@@ -23,10 +23,49 @@
       content="Compression, extension, torsion, and special-purpose springs with precision manufacturing."
     />
     <title>Atlantic Industries | Spring Manufacturing</title>
+    <link rel="preload" as="image" href="images/hero-photo.jpg" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Atlantic Industries",
+      "description": "Spring manufacturing firm with 44+ years of experience producing compression, extension, torsion, and special-purpose springs, wire shapes, flat pressings, and pressed components.",
+      "email": "neerajbhise89@gmail.com",
+      "telephone": "+91-97641-66182",
+      "slogan": "We can turn wire into forms",
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+91-97641-66182", "contactType": "customer service", "name": "Mr. Neeraj Bhise" },
+        { "@type": "ContactPoint", "telephone": "+91-95950-58325", "contactType": "customer service", "name": "Mr. Nikhil Bhise" }
+      ],
+      "location": [
+        { "@type": "Place", "name": "Factory 1", "address": { "@type": "PostalAddress", "streetAddress": "14/9 Vitthal Nagar, 15 No. Opp. Pune Urban Bank, Hadapsar", "addressLocality": "Pune", "postalCode": "411028", "addressCountry": "IN" } },
+        { "@type": "Place", "name": "Factory 2", "address": { "@type": "PostalAddress", "streetAddress": "S. No. 50, Lane No. 6, Bhagyoday Nagar, Kondhwa", "addressLocality": "Pune", "postalCode": "411048", "addressCountry": "IN" } },
+        { "@type": "Place", "name": "Office", "address": { "@type": "PostalAddress", "streetAddress": "8/14, Pleasant Park Society, Fatimanagar", "addressLocality": "Pune", "postalCode": "411013", "addressCountry": "IN" } }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Spring Products",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Compression Springs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Extension and Tension Springs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Torsion and Flat Springs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mechanical Seal Springs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Conical Springs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Spring Clips, Rings, and Washers" } }
+        ]
+      },
+      "areaServed": { "@type": "State", "name": "Maharashtra", "addressCountry": "IN" },
+      "founder": [
+        { "@type": "Person", "name": "Shri Manikrao B. Bhise" },
+        { "@type": "Person", "name": "Shri Sukhdeo Babanrao Bhise" }
+      ]
+    }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#home">Skip to main content</a>
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="#home" aria-label="Atlantic Industries home">
@@ -49,7 +88,7 @@
           </span>
         </a>
 
-        <nav class="main-nav" aria-label="Main navigation">
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#products">Products</a>
           <a href="#customers">Customers</a>
@@ -59,7 +98,11 @@
 
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
           <span class="theme-icon" aria-hidden="true">◐</span>
-          <span>Theme</span>
+          <span class="theme-label">Theme</span>
+        </button>
+
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="menu-icon" aria-hidden="true">&#9776;</span>
         </button>
       </div>
     </header>
@@ -84,6 +127,11 @@
             class="section-image"
             src="images/hero-photo.jpg"
             alt="Illustration of compression, torsion, and extension springs with manufacturing details"
+            fetchpriority="high"
+            decoding="async"
+            width="800"
+            height="533"
+            data-lazy
           />
         </div>
       </section>
@@ -95,6 +143,10 @@
           src="images/dummy-about.jpg"
           alt="Industrial spring manufacturing process"
           loading="lazy"
+          decoding="async"
+          width="800"
+          height="500"
+          data-lazy
         />
         <p>
           Founded by Late Shri Manikrao B. Bhise and Late Shri Sukhdeo Babanrao Bhise, Atlantic Industries
@@ -111,22 +163,22 @@
 
         <div class="grid cards-3">
           <article class="card">
-            <img class="product-thumb" src="images/products/compression-springs.jpg" alt="Compression springs" loading="lazy" data-lightbox />
+            <img class="product-thumb" src="images/products/compression-springs.jpg" alt="Compression springs" loading="lazy" decoding="async" width="400" height="300" tabindex="0" role="button" aria-label="Compression springs – click to enlarge" data-lightbox data-lazy />
           </article>
           <article class="card">
-            <img class="product-thumb" src="images/products/extension-tension-springs.jpg" alt="Extension and tension springs" loading="lazy" data-lightbox />
+            <img class="product-thumb" src="images/products/extension-tension-springs.jpg" alt="Extension and tension springs" loading="lazy" decoding="async" width="400" height="300" tabindex="0" role="button" aria-label="Extension and tension springs – click to enlarge" data-lightbox data-lazy />
           </article>
           <article class="card">
-            <img class="product-thumb" src="images/products/torsion-flat-springs.jpg" alt="Torsion and flat springs" loading="lazy" data-lightbox />
+            <img class="product-thumb" src="images/products/torsion-flat-springs.jpg" alt="Torsion and flat springs" loading="lazy" decoding="async" width="400" height="300" tabindex="0" role="button" aria-label="Torsion and flat springs – click to enlarge" data-lightbox data-lazy />
           </article>
           <article class="card">
-            <img class="product-thumb" src="images/products/mechanical-seal-springs.jpg" alt="Mechanical seal springs" loading="lazy" data-lightbox />
+            <img class="product-thumb" src="images/products/mechanical-seal-springs.jpg" alt="Mechanical seal springs" loading="lazy" decoding="async" width="400" height="300" tabindex="0" role="button" aria-label="Mechanical seal springs – click to enlarge" data-lightbox data-lazy />
           </article>
           <article class="card">
-            <img class="product-thumb" src="images/products/conical-springs.jpg" alt="Conical springs" loading="lazy" data-lightbox />
+            <img class="product-thumb" src="images/products/conical-springs.jpg" alt="Conical springs" loading="lazy" decoding="async" width="400" height="300" tabindex="0" role="button" aria-label="Conical springs – click to enlarge" data-lightbox data-lazy />
           </article>
           <article class="card">
-            <img class="product-thumb" src="images/products/spring-clips-rings-washers.jpg" alt="Spring clips, rings, and washers" loading="lazy" data-lightbox />
+            <img class="product-thumb" src="images/products/spring-clips-rings-washers.jpg" alt="Spring clips, rings, and washers" loading="lazy" decoding="async" width="400" height="300" tabindex="0" role="button" aria-label="Spring clips, rings, and washers – click to enlarge" data-lightbox data-lazy />
           </article>
         </div>
       </section>
@@ -138,23 +190,23 @@
           <p class="section-lead customers-lead">Companies across Maharashtra trust Atlantic Industries for precision, reliability, and fast delivery.</p>
           <div class="logo-strip">
             <figure class="logo-item">
-              <img src="images/customers/unison.svg" alt="Unison Clamping Devices logo" loading="lazy" />
+              <img src="images/customers/unison.svg" alt="Unison Clamping Devices logo" loading="lazy" decoding="async" width="200" height="88" data-lazy />
               <figcaption>Unison Clamping Devices</figcaption>
             </figure>
             <figure class="logo-item">
-              <img src="images/customers/prism.svg" alt="Prism Precision Tech logo" loading="lazy" />
+              <img src="images/customers/prism.svg" alt="Prism Precision Tech logo" loading="lazy" decoding="async" width="200" height="88" data-lazy />
               <figcaption>Prism Precision Tech</figcaption>
             </figure>
             <figure class="logo-item">
-              <img src="images/customers/stellar.svg" alt="Stellar Fasteners logo" loading="lazy" />
+              <img src="images/customers/stellar.svg" alt="Stellar Fasteners logo" loading="lazy" decoding="async" width="200" height="88" data-lazy />
               <figcaption>Stellar Fasteners</figcaption>
             </figure>
             <figure class="logo-item">
-              <img src="images/customers/nova.svg" alt="Nova Motion Systems logo" loading="lazy" />
+              <img src="images/customers/nova.svg" alt="Nova Motion Systems logo" loading="lazy" decoding="async" width="200" height="88" data-lazy />
               <figcaption>Nova Motion Systems</figcaption>
             </figure>
             <figure class="logo-item">
-              <img src="images/customers/vertex.svg" alt="Vertex Auto Components logo" loading="lazy" />
+              <img src="images/customers/vertex.svg" alt="Vertex Auto Components logo" loading="lazy" decoding="async" width="200" height="88" data-lazy />
               <figcaption>Vertex Auto Components</figcaption>
             </figure>
           </div>
