@@ -45,6 +45,13 @@
   document.querySelectorAll('#products img[data-lightbox]').forEach(function (img, i) {
     lbImages.push(img);
     img.addEventListener('click', function () { lbOpen(i); });
+    // Keyboard activation for product thumbnails (Enter / Space)
+    img.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        lbOpen(i);
+      }
+    });
   });
 
   if (lightbox) {
@@ -97,4 +104,55 @@
   if (year) {
     year.textContent = String(new Date().getFullYear());
   }
+
+  // ── Mobile menu toggle ──
+  var menuToggle = document.getElementById('menu-toggle');
+  var siteHeader = document.querySelector('.site-header');
+  var mainNav    = document.getElementById('main-nav');
+
+  function menuClose() {
+    siteHeader.classList.remove('nav-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+    menuToggle.querySelector('.menu-icon').textContent = '\u2630';
+  }
+
+  if (menuToggle && siteHeader && mainNav) {
+    menuToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = siteHeader.classList.toggle('nav-open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      menuToggle.querySelector('.menu-icon').textContent = isOpen ? '\u2715' : '\u2630';
+    });
+
+    mainNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', menuClose);
+    });
+
+    document.addEventListener('click', function (e) {
+      if (siteHeader.classList.contains('nav-open') && !siteHeader.contains(e.target)) {
+        menuClose();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && siteHeader.classList.contains('nav-open')) {
+        menuClose();
+        menuToggle.focus();
+      }
+    });
+  }
+
+  // ── Lazy image fade-in ──
+  // Reveal images as they load; handle already-cached images immediately.
+  document.querySelectorAll('img[data-lazy]').forEach(function (img) {
+    function reveal() { img.classList.add('loaded'); }
+    if (img.complete && img.naturalWidth > 0) {
+      reveal();
+    } else {
+      img.addEventListener('load', reveal);
+      img.addEventListener('error', reveal); // still show broken images
+    }
+  });
 })();
